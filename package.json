@@ -2,8 +2,8 @@
   "name": "advanced-logs",
   "version": "1.0.0",
   "description": "Beautify and modernize console messages.",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },

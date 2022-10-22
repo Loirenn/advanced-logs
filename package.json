@@ -1,0 +1,31 @@
+{
+  "name": "advanced-logs",
+  "version": "1.0.0",
+  "description": "Beautify and modernize console messages.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loiren/advanced-logs.git"
+  },
+  "keywords": [
+    "advanced-logs",
+    "logger",
+    "logs",
+    "console-logger",
+    "console-log"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Loiren",
+  "license": "MIT",
+  "homepage": "https://github.com/loiren/advanced-logs#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "typescript": "^4.8.4"
+  }
+}

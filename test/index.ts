@@ -1,8 +1,8 @@
 import '../src';
 
 console.setConfig({
-    background: true,
-    timestamp: true
+    background: false,
+    timestamp: false
 });
 
 let getConfig = console.getConfig();

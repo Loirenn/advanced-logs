@@ -30,9 +30,9 @@ const success = function (message: string, title?: string) {
 
     title = title || 'SUCCESS';
     if (config?.background) {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.green}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.green}${Colors.fg.black}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.green}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.green}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}`}`)
     } else {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.green}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.green}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.green}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.green}${Colors.bright}${title} ${Colors.reset}${message}`}`)
     };
 };
 
@@ -43,9 +43,9 @@ const error = function (message: string, title?: string) {
 
     title = title || 'ERROR';
     if (config?.background) {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.red}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.red}${Colors.fg.black}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.red}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.red}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}`}`)
     } else {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.red}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.red}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.red}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.red}${Colors.bright}${title} ${Colors.reset}${message}`}`)
     };
    
 };
@@ -57,9 +57,9 @@ const info = function (message: string, title?: string) {
 
     title = title || 'INFO';
     if (config?.background) {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.blue}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.blue}${Colors.fg.black}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.blue}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.blue}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}`}`)
     } else {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.blue}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.blue}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.blue}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.blue}${Colors.bright}${title} ${Colors.reset}${message}`}`)
     };
 };
 
@@ -70,9 +70,9 @@ const warn = function (message: string, title?: string) {
 
     title = title || 'WARN';
     if (config?.background) {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.yellow}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.yellow}${Colors.fg.black}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.yellow}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.yellow}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}`}`)
     } else {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.yellow}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.yellow}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.yellow}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.yellow}${Colors.bright}${title} ${Colors.reset}${message}`}`)
     };
 };
 
@@ -83,9 +83,9 @@ const debug = function (message: string, title?: string) {
 
     title = title || 'DEBUG';
     if (config?.background) {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.magenta}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.magenta}${Colors.fg.black}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.bg.magenta}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}` : `${Colors.bg.magenta}${Colors.fg.white}${Colors.bright} ${title} ${Colors.reset} ${message}`}`)
     } else {
-        console.log(`${config?.timestamp || true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.magenta}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.magenta}${Colors.bright}${title} ${Colors.reset}${message}`}`)
+        console.log(`${config?.timestamp ?? true ? `${Colors.fg.black}${Colors.bright}${getHours}:${getMinutes}:${getSeconds} ${Colors.fg.magenta}${Colors.bright}${title} ${Colors.reset}${message}` : `${Colors.fg.magenta}${Colors.bright}${title} ${Colors.reset}${message}`}`)
     };
 };
 

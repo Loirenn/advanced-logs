@@ -1,5 +1,6 @@
 ![npm](https://img.shields.io/npm/v/advanced-logs?label=npm&style=for-the-badge)
 ![npm](https://img.shields.io/npm/dt/advanced-logs?style=for-the-badge)
+
 [Need help? Contact me on Discord.](https://discord.com/users/852606013126606908)
 <br /><br />
 
@@ -11,6 +12,16 @@ yarn add advanced-logs
 
 # Usage
 ```js
+require('advanced-logs'); // CJS
+import 'advanced-logs'; // ESM
+
+console.setConfig({
+    background: true,
+    timestamp: false
+}); // new | opitonal
+
+console.getConfig(); // new | optional
+
 console.success("Success");
 console.info("Info");
 console.error("Error");

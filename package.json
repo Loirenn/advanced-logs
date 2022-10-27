@@ -1,6 +1,6 @@
 {
   "name": "advanced-logs",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Beautify and modernize console messages.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

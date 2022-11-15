@@ -18,7 +18,7 @@ import 'advanced-logs'; // ESM
 console.setConfig({
     background: true,
     timestamp: false
-}); // new | opitonal
+}); // new | optional
 
 console.getConfig(); // new | optional
 
